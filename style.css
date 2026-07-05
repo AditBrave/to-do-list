@@ -68,6 +68,16 @@ h1 {
     outline: none;
 }
 
+.input-box input[type="time"] {
+    padding: 10px;
+    border: 2px solid rgba(139, 92, 246, 0.4);
+    border-radius: 10px;
+    font-size: 14px;
+    background: #0f0f13;
+    color: #fff;
+    outline: none;
+}
+
 .input-box select {
     padding: 10px;
     border: 2px solid rgba(139, 92, 246, 0.4);
