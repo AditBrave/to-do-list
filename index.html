@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>To-Do List</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>My To-Do List</h1>
-    <div class="counter" id="counter">0/0 tasks completed</div>
+    <div class="container">
+        <h1>My To-Do List</h1>
+        <div class="counter" id="counter">0/0 tasks completed</div>
 
-    <div class="input-box">
-      <input type="text" id="taskInput" placeholder="Add a new task...">
-      <input type="date" id="dueDate">
-      <select id="priority">
-        <option value="low">🟢 Low</option>
-        <option value="medium">🟡 Medium</option>
-        <option value="high">🔴 High</option>
-      </select>
-      <button onclick="addTask()">Add</button>
+        <div class="input-box">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <input type="date" id="dueDate">
+            <input type="time" id="dueTime">
+            <select id="priority">
+                <option value="low">🟢 Low</option>
+                <option value="medium">🟡 Medium</option>
+                <option value="high">🔴 High</option>
+            </select>
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <input type="text" id="searchInput" placeholder="🔍 Search tasks..." oninput="filterTasks()">
+
+        <ul id="taskList"></ul>
     </div>
 
-    <input type="text" id="searchInput" placeholder="🔍 Search tasks..." oninput="filterTasks()">
-
-    <ul id="taskList"></ul>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
